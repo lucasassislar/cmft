@@ -14,6 +14,15 @@
 #include "cubemaputils.h"
 
 #include <string.h>
+#include "half.h"
+#include "ImfInputFile.h"
+#include "ImfChannelList.h"
+#include "ImfArray.h"
+#include "ImfRgbaFile.h"
+
+#include <cmft/mem_istream.h>
+
+using namespace OPENEXR_IMF_INTERNAL_NAMESPACE; // for OpenEXR support
 
 namespace cmft
 {
@@ -133,7 +142,7 @@ namespace cmft
     bool rwFileOpen(Rw* _rw, const char* _mode)
     {
         if (RwType::FilePath == _rw->m_type
-        &&  NULL == _rw->m_file)
+			&&  NULL == _rw->m_file)
         {
             FILE* file = fopen(_rw->m_path, _mode);
             if (NULL != file)
@@ -4267,9 +4276,46 @@ namespace cmft
 
     // Image loading.
     //-----
-
 	bool imageLoadExr(Image& _image, Rw* _rw, AllocatorI* _allocator)
 	{
+		RgbaInputFile file(_rw->m_path);
+
+		Header header = file.header();
+		IMATH_NAMESPACE::Box2i dw = header.dataWindow();
+		int width = dw.max.x - dw.min.x + 1;
+		int height = dw.max.y - dw.min.y + 1;
+
+		int count = width * height;
+		Rgba* pixels = new Rgba[count];	
+
+		file.setFrameBuffer(pixels - dw.min.x - dw.min.y * width, 1, width);
+		file.readPixels(dw.min.y, dw.max.y);
+
+		float* pixelsf = new float[count * 3];
+		for (int j = 0; j < count; j++)
+		{
+			Rgba pixel = pixels[j];
+			int index = j * 3;
+			pixelsf[index] = pixel.r;
+			pixelsf[index + 1] = pixel.g;
+			pixelsf[index + 2] = pixel.b;
+		}
+		delete[] pixels;
+
+		// Fill image structure.
+		Image result;
+		result.m_width = width;
+		result.m_height = height;
+		result.m_dataSize = 12;
+		result.m_format = TextureFormat::Enum::RGB32F;
+		result.m_numMips = 1;
+		result.m_numFaces = 1;
+		result.m_data = (void*)pixelsf;
+
+		// Output.
+		imageMove(_image, result, _allocator);		
+
+		return true;
 	}
 
     bool imageLoadDds(Image& _image, Rw* _rw, AllocatorI* _allocator)
@@ -5041,7 +5087,7 @@ namespace cmft
         }
 		else if (EXR_MAGIC == magic)
 		{
-
+			loaded = imageLoadExr(_image, _rw, _allocator);
 		}
 
         if (!loaded)

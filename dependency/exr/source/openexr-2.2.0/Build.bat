@@ -37,7 +37,7 @@ setlocal
 del /f CMakeCache.txt
 cmake   -DCMAKE_INSTALL_PREFIX=%BUILDS_X64_FOLDER% ^
         -DZLIB_ROOT=%ZLIB_FOLDER% ^
-        -DBUILD_SHARED_LIBS=true ^
+        -DBUILD_SHARED_LIBS=false ^
         -DILMBASE_PACKAGE_PREFIX=%BUILDS_X64_FOLDER% -G "Visual Studio 10 Win64" .
 %VS% openexr.sln /build "Release|x64"
 %VS% openexr.sln /build "Release|x64" /project INSTALL
@@ -49,6 +49,7 @@ setlocal
 del /f CMakeCache.txt
 cmake   -DCMAKE_INSTALL_PREFIX=%BUILDS_X86_FOLDER% ^
         -DZLIB_ROOT=%ZLIB_FOLDER% ^
+        -DBUILD_SHARED_LIBS=false ^
         -DILMBASE_PACKAGE_PREFIX=%BUILDS_X86_FOLDER% -G "Visual Studio 10" .
 %VS% openexr.sln /build "Release|Win32"
 %VS% openexr.sln /build "Release|Win32" /project INSTALL
