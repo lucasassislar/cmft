@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{50ADE263-FAD0-3A62-8DDD-55EE9BF1C31D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>IlmImfTest</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">IlmImfTest.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">IlmImfTest</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">IlmImfTest.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">IlmImfTest</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">IlmImfTest.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">IlmImfTest</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">IlmImfTest.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">IlmImfTest</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/";OPENEXR_DLL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/\";OPENEXR_DLL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\IlmImf\Debug\IlmImf-2_2.lib;Half.lib;Iex-2_2.lib;Imath-2_2.lib;IlmThread-2_2.lib;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib;C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/Debug/IlmImfTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/Debug/IlmImfTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/";OPENEXR_DLL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/\";OPENEXR_DLL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\IlmImf\Release\IlmImf-2_2.lib;Half.lib;Iex-2_2.lib;Imath-2_2.lib;IlmThread-2_2.lib;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib;C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/Release/IlmImfTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/Release/IlmImfTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/";OPENEXR_DLL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/\";OPENEXR_DLL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\IlmImf\MinSizeRel\IlmImf-2_2.lib;Half.lib;Iex-2_2.lib;Imath-2_2.lib;IlmThread-2_2.lib;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib;C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/MinSizeRel/IlmImfTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/MinSizeRel/IlmImfTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/";OPENEXR_DLL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/\";OPENEXR_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\config;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfUtil;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmaketiled;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrenvmap;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmakepreview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\exrmultiview;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfFuzzTest;C:\Dev\cmftsharp\cmft\dependency\exr\source\zlib-1.2.8;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\include\OpenEXR;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\IlmImf\RelWithDebInfo\IlmImf-2_2.lib;Half.lib;Iex-2_2.lib;Imath-2_2.lib;IlmThread-2_2.lib;C:\Dev\cmftsharp\cmft\dependency\exr\builds\x86\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib;C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/RelWithDebInfo/IlmImfTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/RelWithDebInfo/IlmImfTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 -BC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 --check-stamp-file C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 -BC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 --check-stamp-file C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 -BC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 --check-stamp-file C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 -BC:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0 --check-stamp-file C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Dev/cmftsharp/cmft/dependency/exr/source/openexr-2.2.0/IlmImfTest/CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImfTest\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="compareB44.cpp"  />
+    <ClCompile Include="compareDwa.cpp"  />
+    <ClCompile Include="compareFloat.cpp"  />
+    <ClCompile Include="main.cpp"  />
+    <ClCompile Include="testAttributes.cpp"  />
+    <ClCompile Include="testBackwardCompatibility.cpp"  />
+    <ClCompile Include="testBadTypeAttributes.cpp"  />
+    <ClCompile Include="testChannels.cpp"  />
+    <ClCompile Include="testCompositeDeepScanLine.cpp"  />
+    <ClCompile Include="testCompression.cpp"  />
+    <ClCompile Include="testConversion.cpp"  />
+    <ClCompile Include="testCopyDeepScanLine.cpp"  />
+    <ClCompile Include="testCopyDeepTiled.cpp"  />
+    <ClCompile Include="testCopyMultiPartFile.cpp"  />
+    <ClCompile Include="testCopyPixels.cpp"  />
+    <ClCompile Include="testCustomAttributes.cpp"  />
+    <ClCompile Include="testDeepScanLineBasic.cpp"  />
+    <ClCompile Include="testDeepScanLineHuge.cpp"  />
+    <ClCompile Include="testDeepScanLineMultipleRead.cpp"  />
+    <ClCompile Include="testDeepTiledBasic.cpp"  />
+    <ClCompile Include="testDwaCompressorSimd.cpp"  />
+    <ClCompile Include="testExistingStreams.cpp"  />
+    <ClCompile Include="testFutureProofing.cpp"  />
+    <ClCompile Include="testHuf.cpp"  />
+    <ClCompile Include="testInputPart.cpp"  />
+    <ClCompile Include="testIsComplete.cpp"  />
+    <ClCompile Include="testLineOrder.cpp"  />
+    <ClCompile Include="testLut.cpp"  />
+    <ClCompile Include="testMagic.cpp"  />
+    <ClCompile Include="testMultiPartApi.cpp"  />
+    <ClCompile Include="testMultiPartFileMixingBasic.cpp"  />
+    <ClCompile Include="testMultiPartSharedAttributes.cpp"  />
+    <ClCompile Include="testMultiPartThreading.cpp"  />
+    <ClCompile Include="testMultiScanlinePartThreading.cpp"  />
+    <ClCompile Include="testMultiTiledPartThreading.cpp"  />
+    <ClCompile Include="testMultiView.cpp"  />
+    <ClCompile Include="testNativeFormat.cpp"  />
+    <ClCompile Include="testOptimized.cpp"  />
+    <ClCompile Include="testOptimizedInterleavePatterns.cpp"  />
+    <ClCompile Include="testPartHelper.cpp"  />
+    <ClCompile Include="testPreviewImage.cpp"  />
+    <ClCompile Include="testRgba.cpp"  />
+    <ClCompile Include="testRgbaThreading.cpp"  />
+    <ClCompile Include="testRle.cpp"  />
+    <ClCompile Include="testSampleImages.cpp"  />
+    <ClCompile Include="testScanLineApi.cpp"  />
+    <ClCompile Include="testSharedFrameBuffer.cpp"  />
+    <ClCompile Include="testStandardAttributes.cpp"  />
+    <ClCompile Include="testTiledCompression.cpp"  />
+    <ClCompile Include="testTiledCopyPixels.cpp"  />
+    <ClCompile Include="testTiledLineOrder.cpp"  />
+    <ClCompile Include="testTiledRgba.cpp"  />
+    <ClCompile Include="testTiledYa.cpp"  />
+    <ClCompile Include="testWav.cpp"  />
+    <ClCompile Include="testXdr.cpp"  />
+    <ClCompile Include="testYca.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\ZERO_CHECK.vcxproj">
+      <Project>86F7BFAB-D94A-3CE2-8644-B35479E2CC8B</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Dev\cmftsharp\cmft\dependency\exr\source\openexr-2.2.0\IlmImf\IlmImf.vcxproj">
+      <Project>5F565527-1C21-3864-A599-80F8BF8B8603</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

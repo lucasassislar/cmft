@@ -1,0 +1,7 @@
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/zlib.lib
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/bin/zlib.dll
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/lib/zlibstatic.lib
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/include/zconf.h
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/include/zlib.h
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/share/man/man3/zlib.3
+C:/Dev/cmftsharp/cmft/dependency/exr/builds/x86/share/pkgconfig/zlib.pc

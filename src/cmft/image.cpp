@@ -741,6 +741,10 @@ namespace cmft
         uint8_t m_signature[18];
     };
 
+	// EXR format
+	//-----
+	#define EXR_MAGIC				20000630
+
     // DDS format.
     //-----
 
@@ -4264,6 +4268,10 @@ namespace cmft
     // Image loading.
     //-----
 
+	bool imageLoadExr(Image& _image, Rw* _rw, AllocatorI* _allocator)
+	{
+	}
+
     bool imageLoadDds(Image& _image, Rw* _rw, AllocatorI* _allocator)
     {
         size_t read;
@@ -5031,6 +5039,10 @@ namespace cmft
         {
             loaded = imageLoadTga(_image, _rw, _allocator);
         }
+		else if (EXR_MAGIC == magic)
+		{
+
+		}
 
         if (!loaded)
         {
